@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main() {
+	int row, col, A[3][3], B[3][3], C[3][3];
+	printf("Enter elements in the array A: \n");
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			scanf("%d", &A[row][col]);
+		}
+	}
+	printf("Enter elements in the array B:\n");
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			scanf("%d", &B[row][col]);
+		}
+	}
+	printf("Subtraction between A and B matrics:\n");
+	for (row = 0; row < 3; row++) {
+		for (col=0; col < 3; col++) {
+			C[row][col] = A[row][col] - B[row][col];
+		}
+	}
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			printf("%d\t", C[row][col]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
