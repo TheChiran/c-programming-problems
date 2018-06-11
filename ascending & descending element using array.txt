@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main() {
+	int arr[100], size, temp;
+	int i, j;
+	printf("Enter size of the array: ");
+	scanf("%d", &size);
+	printf("Enter elements of the array:\n");
+	for (i = 0; i < size; i++) {
+		scanf("%d", &arr[i]);
+	}
+	printf("Array elements: ");
+	for (i = 0; i < size; i++) {
+		printf("%d\t", arr[i]);
+	}
+	printf("\nAscending Order: ");
+	for (i = 0; i < size; i++) {
+		for (j = i + 1; j < size; j++) {
+			if (arr[i] > arr[j]) {
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+		printf("%d\t", arr[i]);
+	}
+	printf("\nDescending Order: ");
+	for (i = 0; i < size; i++) {
+		for (j = i + 1; j < size; j++) {
+			if (arr[i] < arr[j]) {
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+		printf("%d\t", arr[i]);
+	}
+	
+	return 0;
+}
