@@ -7,151 +7,162 @@ int main() {
 	}
 	
 	for (i = 0; i < n; i++) {
+		if (mark[i] == 0) {
+			printf("0\n");
+		}
 		if (mark[i] > 0 && mark[i] <= 33) {
 
 			printf("%d\n", mark[i]);
+			
 
 
 		}
 		if (mark[i] > 33 && mark[i] <= 40) {
 			
-			if (mark[i] < 40 && (40 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 40 && (40 - mark[i]) < 3) {
+				printf("40\n");
 			}
 			else {
-				printf("40\n");
+				
+				printf("%d\n", mark[i]);
 			}
 			
 			
 		}
 		if (mark[i]>40 && mark[i] <= 45) {
 
-			if (mark[i] < 45 && (45 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 45 && (45 - mark[i]) < 3) {
+				printf("45\n");
 			}
 			else {
-				printf("45\n");
+				printf("%d\n", mark[i]);
+				
 			}
 
 
 		}
 		if (mark[i]>45 && mark[i] <= 50 ) {
 
-			if (mark[i] < 50 ) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 50 && (50 - mark[i]) < 3) {
+				printf("50\n");
 			}
 			else {
-				printf("50\n");
+				
+				printf("%d\n", mark[i]);
 			}
 
 
 		}
 		if (mark[i]>50 && mark[i] <= 55 ) {
 
-			if (mark[i] < 55 && (55 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 55 && (55 - mark[i]) < 3) {
+				printf("55\n");
+				
 			}
 			else {
-				printf("55\n");
+				printf("%d\n", mark[i]);
+				
 			}
 
 
 		}
 		if (mark[i] > 55 && mark[i] <= 60) {
 
-			if (mark[i] < 60 && (60 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 60 && (60 - mark[i]) < 3) {
+				printf("60\n");
 			}
 			else {
-				printf("60\n");
+				
+				printf("%d\n", mark[i]);
 			}
 
 
 		}
 		if (mark[i] > 60 && mark[i] <= 65) {
 
-			if (mark[i] < 65 && (65 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 65 && (65 - mark[i]) < 3) {
+				printf("65\n");
 			}
 			else {
-				printf("65\n");
+				
+				printf("%d\n", mark[i]);
 			}
 
 
 		}
 		if (mark[i] > 65 && mark[i] <= 70) {
 
-			if (mark[i] < 70 && (70 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 70 && (70 - mark[i]) < 3) {
+				printf("70\n");
 			}
 			else {
-				printf("70\n");
+				printf("%d\n", mark[i]); 
 			}
 
 
 		}
 		if (mark[i] > 70 && mark[i] <= 75) {
 
-			if (mark[i] < 75 && (75 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 75 && (75 - mark[i]) < 3) {
+				 printf("75\n");
 			}
 			else {
-				printf("75\n");
+				printf("%d\n", mark[i]);
 			}
 
 
 		}
 		if (mark[i] > 75 && mark[i] <= 80) {
 
-			if (mark[i] < 80 && (80 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 80 && (80 - mark[i]) < 3) {
+				printf("80\n");
 			}
 			else {
-				printf("80\n");
+				 printf("%d\n", mark[i]);
 			}
 
 
 		}
 		if (mark[i] > 80 && mark[i] <= 85) {
 
-			if (mark[i] < 85 && (85 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 85 && (85 - mark[i]) < 3) {
+				printf("85\n");
 			}
 			else {
-				printf("85\n");
+				 printf("%d\n", mark[i]);
 			}
 
 
 		}
 		if (mark[i] > 85 && mark[i] <= 90) {
 
-			if (mark[i] < 90 && (90 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 90 && (90 - mark[i]) < 3) {
+				 printf("90\n");
 			}
 			else {
-				printf("90\n");
+				printf("%d\n", mark[i]);
 			}
 
 
 		}
 		if (mark[i] > 90 && mark[i] <= 95) {
 
-			if (mark[i] < 95 && (95 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 95 && (95 - mark[i]) < 3) {
+				 printf("95\n");
 			}
 			else {
-				printf("95\n");
+				printf("%d\n", mark[i]);
 			}
 
 
 		}
 		if (mark[i] > 95 && mark[i] <= 100) {
 
-			if (mark[i] < 100 && (100 - mark[i]) == 3) {
-				printf("%d\n", mark[i]);
+			if (mark[i] < 100 && (100 - mark[i]) < 3) {
+				 printf("100\n");
 			}
 			else {
-				printf("100\n");
+				printf("%d\n", mark[i]);
 			}
 
 
