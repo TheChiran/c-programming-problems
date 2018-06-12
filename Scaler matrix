@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+	int row, col, A[3][3], n;
+	printf("Input elements of matrix A: \n");
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			scanf("%d", &A[row][col]);
+		}
+	}
+	printf("Input multiplier: ");
+	scanf("%d", &n);
+	printf("Scaler matrix after multiply with %d\n", n);
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			printf("%d\t", A[row][col]*n);
+		}
+		printf("\n");
+	}
+}
