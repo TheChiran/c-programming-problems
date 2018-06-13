@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main() {
+	int arr[3][3];
+	int row, col, upper;
+	printf("Input elements of matrix:\n");
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			scanf("%d", &arr[row][col]);
+		}
+	}
+	upper = 1;
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			if (col < row&&arr[row][col] != 0) {
+				upper = 0;
+			}
+		}
+	}
+	if (upper == 1) {
+		printf("The matrix is upper triangle.\n");
+	}
+	else  {
+		printf("The matrix is not a upper triangle.\n");
+	}
+	return 0;
+}
