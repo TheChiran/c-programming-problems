@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main() {
+	int arr[3][3];
+	int row, col, lower;
+	printf("Enter elements for the matrix:\n");
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			scanf("%d", &arr[row][col]);
+		}
+	}
+	lower = 1;
+	for (row = 0; row < 3; row++) {
+		for (col=0; col < 3; col++) {
+			if (col > row&&arr[row][col] != 0) {
+				lower = 0;
+			}
+		}
+	}
+	if (lower == 1) {
+		printf("Matrix is lower triangle.\n");
+	}
+	else {
+		printf("Matrix is not a lower triangle.\n");
+	}
+	return 0;
+}
