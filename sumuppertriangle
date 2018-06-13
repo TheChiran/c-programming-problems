@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main() {
+	int arr[3][3];
+	int row, col, sum = 0;
+	printf("Enter elements for the matrix:\n");
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			scanf("%d", &arr[row][col]);
+		}
+	}
+	for (row = 0; row < 3; row++) {
+		for(col = 0; col < 3; col++) {
+			if (row < col) {
+				sum += arr[row][col];
+			}
+		}
+	}
+	printf("Sum of upper triangle matrix: %d\n", sum);
+	return 0;
+}
