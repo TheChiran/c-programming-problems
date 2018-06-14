@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main() {
+	int A[3][3];
+	int row, col;
+	int total = 0;
+	printf("Enter element for the matrix:\n");
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			scanf("%d", &A[row][col]);
+		}
+	}
+	for (row = 0; row < 33; row++) {
+		for (col = 0; col < 3; col++) {
+			if (A[row][col] == 0) {
+				total++;
+			}
+		}
+	}
+	if (total >= (row*col) / 2) {
+		printf("Given matrix is sparse matrix.\n");
+	}
+	else {
+		printf("Given matrix is not sparse matrix.\n");
+	}
+	return 0;
+}
