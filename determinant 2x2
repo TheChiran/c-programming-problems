@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main() {
+	int A[2][2];
+	int row, col, det;
+	int a, b, c, d;
+	printf("Enter elements of the matrix:\n");
+	for (row = 0; row < 2; row++) {
+		for (col = 0; col < 2; col++) {
+			scanf("%d", &A[row][col]);
+		}
+	}
+	a = A[0][0];
+	b = A[0][1];
+	c = A[1][0];
+	d = A[1][1];
+	printf("Original matrix:\n");
+	for (row = 0; row < 2; row++) {
+		for (col = 0; col < 2; col++) {
+			printf("%d\t", A[row][col]);
+		}
+		printf("\n");
+	}
+	det = (a*d) - (c*b);
+	printf("Determinant of the matrix: %d\n", det);
+	return 0;
+}
