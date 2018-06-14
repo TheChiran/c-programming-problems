@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main() {
+	int A[3][3];
+	int row, col;
+	int identify;
+	printf("Enter element for the matrix:\n");
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			scanf("%d", &A[row][col]);
+		}
+	}
+	identify = 1;
+	for (row = 0; row < 3; row++) {
+		for (col = 0; col < 3; col++) {
+			if (row == col && A[row][col] != 1) {
+				identify = 0;
+			}
+		}
+	}
+	if (identify == 1) {
+		printf("Matrix is identify.\n");
+	}
+	else {
+		printf("Matrix is not identify.\n");
+	}
+	return 0;
+}
