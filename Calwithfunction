@@ -1,0 +1,60 @@
+#include<stdio.h>
+void addition();
+void substraction();
+void multiplication();
+void division();
+int main() {
+	int n;
+	printf("Enter input 1 to 4, 1=Add, 2=Substrac, 3=Multi, 4=Div: ");
+	scanf("%d", &n);
+	if (n == 1) {
+		addition();
+	}
+	else if (n == 2) {
+		substraction();
+	}
+	else if (n == 3) {
+		multiplication();
+	}
+	else if (n == 4) {
+		division();
+	}
+	else {
+		printf("Wrong input.Give 1 to 4.\n");
+	}
+	return 0;
+}
+void addition() {
+	int a, b;
+	printf("Enter a: ");
+	scanf("%d", &a);
+	printf("Enter b: ");
+	scanf("%d", &b);
+	printf("Addition of %d and %d: %d\n", a, b, a + b);
+}
+void substraction() {
+	int a, b;
+	printf("Enter a: ");
+	scanf("%d", &a);
+	printf("Enter b: ");
+	scanf("%d", &b);
+	printf("Substraction of %d and %d: %d\n", a, b, a - b);
+}
+void multiplication() {
+	int a, b;
+	printf("Enter a: ");
+	scanf("%d", &a);
+	printf("Enter b: ");
+	scanf("%d", &b);
+	printf("Multiplication of %d and %d: %d\n", a, b, a * b);
+}
+void division() {
+	int a;
+	float b, divi;
+	printf("Enter a: ");
+	scanf("%d", &a);
+	printf("Enter b: ");
+	scanf("%f", &b);
+	divi = a / b;
+	printf("Division of %d and %.0f: %.2f\n", a, b, divi);
+}
