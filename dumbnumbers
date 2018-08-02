@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main() {
+    int T, A, B, R[1000], count = 0;
+    int i, j, flag;
+	scanf("%d", &T);
+	for (i = 0; i < T; i++) {
+
+		count = 0;
+		scanf("%d%d", &A, &B);
+		while (A <= B) {
+			flag = 0;
+			for (j = 2; j <= A / 2; j++) {
+				if (A%j == 0) {
+					flag = 1;
+					break;
+				}
+
+			}
+			if (flag == 0) {
+				if (A != 1) {
+					count++;
+				}
+			}
+			++A;
+		}
+		R[i] = count;
+	}
+	for (i = 0; i < T; i++) {
+		printf("Case %d: %d\n", i + 1, R[i]);
+	}
+	return 0;
+}
