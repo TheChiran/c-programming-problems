@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int i, j, k, arr[100], even[100], odd[100], n, l, arr2[100];
+	cout << "Enter size of the array: ";
+	cin >> n;
+	for (i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+	j = 0;
+	k = 0;
+	for (i = 0; i < n; i++) {
+		if (arr[i] % 2 == 0) {
+			even[j] = arr[i];
+			j++;
+		}
+		else {
+			odd[k] = arr[i];
+			k++;
+		}
+	}
+	int n1 = j, n2 = k;
+	cout << "Even elements: ";
+	for (k = 0; k < n1; k++) {
+		cout << even[k] << "  ";
+	}
+	cout << endl;
+	cout << "Odd Elements: ";
+	for (j = 0; j < n2; j++) {
+		cout << odd[j] << "  ";
+	}
+	cout << endl;
+	for (l = 0; l < n1; l++) {
+		arr2[l] = even[l];
+	}
+	int m;
+	for (m = 0; m < n2; m++) {
+		arr2[l] = odd[m];
+		l++;
+	}
+	cout << "Array after sorting: ";
+	for (l = 0; l < n; l++) {
+		cout << arr2[l] << "  ";
+	}
+	cout << endl;
+
+	return 0;
+}
