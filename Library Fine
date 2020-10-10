@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int returnedDate,dueDate,returnedMonth,dueMonth,returnedYear,dueYear,fine;
+    cin>>returnedDate>>returnedMonth>>returnedYear;
+    cin>>dueDate>>dueMonth>>dueYear;
+    if(returnedDate<=dueDate && returnedMonth == dueMonth && returnedYear == dueYear)
+        fine = 0;
+    else if(returnedDate>dueDate && returnedMonth == dueMonth && returnedYear == dueYear)
+        fine = 15 * (returnedDate-dueDate);
+    else if(returnedMonth>dueMonth && returnedYear == dueYear)
+        fine = 500 * (returnedMonth-dueMonth);
+    else if(returnedYear>dueYear)
+        fine = 10000;
+    cout<<fine<<endl;
+
+    return 0;
+}
